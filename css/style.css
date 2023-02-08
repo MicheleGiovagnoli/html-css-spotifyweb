@@ -46,6 +46,9 @@
         .space-between{
             justify-content: space-between;
         }
+        .scroll {
+            overflow: scroll;
+        }
         img {
             max-width: 100%;
         }
