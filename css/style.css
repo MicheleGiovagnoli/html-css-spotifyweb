@@ -28,11 +28,9 @@ html {
     }
     .ul-debug {
         background-color: red;
-        height: 50px;
     }
     .li-debug{
         background-color: green;
-        height: 20px;
     }
     .playlist h2 .debug{   
         background-color: red;
@@ -69,6 +67,9 @@ html {
         }
         img {
             max-width: 100%;
+        }
+        .circle {
+            border-radius: 50%;
         }
             /************************************************
                 SITE SECTIONS
@@ -188,7 +189,7 @@ html {
                 /* NAV-BAR */
                 .nav-bar{
                     width: 90%;
-                    margin: 0px auto;
+                    margin: 0.5rem auto;
                 }
                     .nav-bar ul {
                         list-style: none;
@@ -205,17 +206,36 @@ html {
                 .playlist {
                     width: 90%;
                     margin: 0px auto;
-                    margin-top: 50px;
                 }
-                    .playlist h2 {   
-                        padding: 20px;
+                    .playlist .title h2 {   
+                        padding: 20px 0px;
+                        color: var(--fourth-color);
+                    }
+                    .playlist .title span{
+                        color: var(--fifth-color);
                     }
                     .playlist ul {
                         list-style: none;
                     }
                     .playlist ul li {
                         width: calc(100% / 2);
-                        height: 100px;
+                    }
+                    .playlist .container {
+                        padding: 10px;
+                    }
+                    .playlist .container img {
+                        width: 100%;
+                    }
+                    .playlist .container .description{
+                        text-align: center;
+                    }
+                    .playlist .container .description h2{
+                        font-size: 15px;
+                        color: var(--fourth-color);
+                    }
+                    .playlist .container .description span{
+                        font-size: 13px;
+                        color: var(--fifth-color);
                     }
 
             /*-- FOOTER --*/
@@ -364,7 +384,6 @@ html {
                     /* PLAYLIST */
                     .playlist ul li {
                         width: calc(100% / 4);
-                        height: 100px;
                     }
                 }
                 @media screen and (min-width:992px){
@@ -377,7 +396,6 @@ html {
                     /* PLAYLIST */
                     .playlist ul li {
                         width: calc(100% / 6);
-                        height: 100px;
                     }
                     
                 }
