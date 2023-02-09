@@ -94,6 +94,9 @@ html {
                     .logo h1{
                         display: none;
                     }
+                    .logo a {
+                        color: var(--fifth-color);
+                    }
                     .link {
                         margin: 0px auto;
                         font-size: 1.8rem;
@@ -125,7 +128,7 @@ html {
                 .sidebar-bottom .download {
                     margin: 0px auto;
                     font-size: 1rem;
-                    color: var(--fourth-color);
+                    color: var(--fifth-color);
                 
                 }
                 .sidebar-bottom .download span {
@@ -134,7 +137,7 @@ html {
                 .sidebar-bottom .account {
                     margin: 0px auto;
                     font-size: 2rem;
-                    color: var(--fourth-color);
+                    color: var(--fifth-color);
                     padding: 1rem 0rem;
                 }
                 .sidebar-bottom .account h3 {
@@ -229,20 +232,45 @@ html {
                     .side-bar {
                         min-width: 200px
                     }
+                    /* siderbar top */
+                    /* logo */
                     .logo {
                         height: 100px;
                         width: 90%;
                         display: flex;
                         align-items: center;
-                        font-size: 2rem;
+                    
+                    }
+                    .logo a {
+                        pointer-events: none;
+                        cursor: text;
+                        text-decoration: none;
                     }
                     .logo h1{
                         display: inline-block;
                         vertical-align: middle;
+                        font-size: 2rem;
+                        padding-bottom:10px;
                     }
-                    .link ul li span {
+
+                    /* link */
+                    .link {
+                        width: 90%;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .link a{
+                        pointer-events: none;
+                        cursor: text;
+                        text-decoration: none;
+                    }
+                    .link ul li a span {
                         display: inline-block;
+                        font-size: 1rem;
+                        vertical-align: middle;
                     }
+
+                    /* playlist */
                     .playlist-scroll {
                         overflow-y: hidden;
                         display: flex;
@@ -252,6 +280,7 @@ html {
                         overflow-y: scroll;
                     
                     }
+                    /* siderbar bottom */
                     .sidebar-bottom {
                         width: 200px;
                         
