@@ -150,6 +150,8 @@ html {
                 .sidebar-bottom .account h3 {
                     display: none;
                 }
+
+
             /*-- CENTER --*/
             .center {
                 background-color:var(--primary-color);
@@ -171,9 +173,16 @@ html {
                     align-items: center;
                 }
                     .upgrade-button {
-                        width: 100px;
-                        text-align: center;
+                        width: 200px;
                         margin-right: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: bolder;
+                        color: var(--fourth-color);
+                        border: solid 1px var(--fourth-color);
+                        border-radius: 30px;
+                        padding: 1rem;
                     }
 
                 /* NAV-BAR */
@@ -187,6 +196,9 @@ html {
                     }
                     .nav-bar ul li {
                         width: calc(100% / 4);
+                        text-align: center;
+                        color: var(--fifth-color);
+                        padding:0.5rem 0rem;
                     }
 
                 /* PLAYLIST */
