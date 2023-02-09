@@ -11,6 +11,7 @@
     --secondary-color:black;
     --third-color:rgb(40, 40, 40);
     --fourth-color:white;
+    --fifth-color:rgb(210, 210, 210);
 }
 html {
     font-size: 1rem;
@@ -87,7 +88,7 @@ html {
                 }
                     .logo {
                         margin: 0px auto;
-                        font-size: 2rem;
+                        font-size: 2.5rem;
                         color:var(--fourth-color);
                     }
                     .logo h1{
@@ -95,11 +96,17 @@ html {
                     }
                     .link {
                         margin: 0px auto;
-                        font-size: 2rem;
+                        font-size: 1.8rem;
                         color: var(--fourth-color);
                     }
                     .link ul{
                         flex-direction: column;
+                    }
+                    .link a {
+                        color: var(--fifth-color);
+                    }
+                    .link ul li { 
+                        padding: 0.3rem 0rem;
                     }
                     .link ul li span {
                         display: none;
@@ -111,6 +118,27 @@ html {
                 /* sidebar bottom */
                 .sidebar-bottom {
                     height: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                }
+                .sidebar-bottom .download {
+                    margin: 0px auto;
+                    font-size: 1rem;
+                    color: var(--fourth-color);
+                
+                }
+                .sidebar-bottom .download span {
+                    display: none;
+                }
+                .sidebar-bottom .account {
+                    margin: 0px auto;
+                    font-size: 2rem;
+                    color: var(--fourth-color);
+                    padding: 1rem 0rem;
+                }
+                .sidebar-bottom .account h3 {
+                    display: none;
                 }
             /*-- CENTER --*/
             .center {
@@ -223,6 +251,16 @@ html {
                     .playlist-scroll ul {
                         overflow-y: scroll;
                     
+                    }
+                    .sidebar-bottom {
+                        width: 200px;
+                        
+                    }
+                    .sidebar-bottom .download span {
+                        display: inline-block;
+                    }
+                    .sidebar-bottom .account h3 {
+                        display: inline-block;
                     }
                     /* NAV-BAR */
                     .nav-bar ul li {
