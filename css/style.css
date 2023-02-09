@@ -249,6 +249,29 @@ html {
                 /* footer left */
                 .footer-left {
                     width: 200px;
+                    display: flex;
+                    align-items: center;
+                    padding-left:1rem;
+                }
+                .footer-left .img {
+                    width: 50px;
+                    height: 50px;
+                }
+                .footer-left .img img{
+                    width: 100%;
+                }
+                .footer-left .title{
+                    font-size: 10px;
+                    text-align: center;
+                    padding: 0px 0.5rem;
+                    color: var(--fourth-color);
+                }
+                .footer-left .title span {
+                    color: var(--fifth-color);
+                }
+                .footer-left .icon i {
+                    color: var(--fifth-color);
+                    padding: 0px 0.5rem;
                 }
                 /* footer center */
                 .footer-center{
