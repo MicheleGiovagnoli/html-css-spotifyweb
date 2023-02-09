@@ -246,6 +246,7 @@ html {
                 position: relative;
                 z-index: 1;
             }
+            
                 /* footer left */
                 .footer-left {
                     width: 200px;
@@ -273,9 +274,10 @@ html {
                     color: var(--fifth-color);
                     padding: 0px 0.5rem;
                 }
+
                 /* footer center */
-                .footer-center{
-                    
+                .footer-center {
+                    width: 50%;
                 }
                 .footer-center .button {
                     display: flex;
@@ -291,18 +293,19 @@ html {
                     font-size: 30px;
                 }
                 .footer-center .bar {
+                    width: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                 }
                 .footer-center .bar .bar-line{
-                    width: 300px;
+                    width: 90%;
                     height: 5px;
                     background-color: var(--fifth-color);
                     border-radius: 10px;
                 }
-                .footer-debug .bar .bar-line-move {
-                    width: 30%;
+                .footer-center .bar .bar-line-move {
+                    width: 50px;
                     height: 100%;
                     background-color: var(--fourth-color);
                     border-radius: 10px;
@@ -316,7 +319,29 @@ html {
                 
                 /* footer right */
                 .footer-right{
-                    width: 150px;
+                    width: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: right;
+                }
+                .footer-right .icon i{
+                    color: var(--fifth-color);
+                    padding: 0px 0.5rem;
+                }
+                .footer-right .bar {
+                    width: 50%;
+                }
+                .footer-right .bar .bar-line{
+                    width: 90%;
+                    height: 5px;
+                    background-color: var(--fifth-color);
+                    border-radius: 10px;
+                }
+                .footer-right .bar .bar-line-move {
+                    width: 30%;
+                    height: 100%;
+                    background-color: var(--fourth-color);
+                    border-radius: 10px;
                 }
                 /************************************************
                     RESPONSIVE
@@ -408,7 +433,7 @@ html {
                         padding-left: 0.5rem;
                     }
 
-                    /* siderbar bottom */
+                    /* sidebar bottom */
                     .sidebar-bottom {
                         width: 200px;
                         align-items: start;
