@@ -275,8 +275,45 @@ html {
                 }
                 /* footer center */
                 .footer-center{
-                    width: 300px;
+                    
                 }
+                .footer-center .button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .footer-center .button i{
+                    color: var(--fifth-color);
+                    padding: 1rem;
+                    font-size: 20px;
+                }
+                .footer-center .button .play{
+                    font-size: 30px;
+                }
+                .footer-center .bar {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .footer-center .bar .bar-line{
+                    width: 300px;
+                    height: 5px;
+                    background-color: var(--fifth-color);
+                    border-radius: 10px;
+                }
+                .footer-debug .bar .bar-line-move {
+                    width: 30%;
+                    height: 100%;
+                    background-color: var(--fourth-color);
+                    border-radius: 10px;
+                }
+
+                .footer-center .bar span {
+                    color: var(--fourth-color);
+                    padding: 0px 1rem;
+                }
+
+                
                 /* footer right */
                 .footer-right{
                     width: 150px;
