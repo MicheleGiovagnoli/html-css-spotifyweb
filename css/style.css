@@ -14,7 +14,8 @@
     --fifth-color:rgb(210, 210, 210);
 }
 html {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
 }
     /*************************************************
         DE-BUG
@@ -86,17 +87,18 @@ html {
                     flex-direction: column;
                     min-height: 300px;
                 }
+                    /* LOGO */
                     .logo {
                         margin: 0px auto;
-                        font-size: 2.5rem;
-                        color:var(--fourth-color);
+                        font-size: 2.5rem;                     
                     }
                     .logo h1{
                         display: none;
                     }
                     .logo a {
-                        color: var(--fifth-color);
+                        color: var(--fourth-color);
                     }
+                    /* LINK */
                     .link {
                         margin: 0px auto;
                         font-size: 1.8rem;
@@ -104,6 +106,7 @@ html {
                     }
                     .link ul{
                         flex-direction: column;
+                        list-style-type: none;
                     }
                     .link a {
                         color: var(--fifth-color);
@@ -114,8 +117,11 @@ html {
                     .link ul li span {
                         display: none;
                     }
+
+                    /* PLAYLIST */
                     .playlist-scroll {
                         display: none;
+                        padding: 1rem;
                     }
 
                 /* sidebar bottom */
@@ -129,6 +135,7 @@ html {
                     margin: 0px auto;
                     font-size: 1rem;
                     color: var(--fifth-color);
+                    padding-bottom: 0.5rem;
                 
                 }
                 .sidebar-bottom .download span {
@@ -138,7 +145,7 @@ html {
                     margin: 0px auto;
                     font-size: 2rem;
                     color: var(--fifth-color);
-                    padding: 1rem 0rem;
+                    padding-top: 0.5rem;
                 }
                 .sidebar-bottom .account h3 {
                     display: none;
@@ -232,6 +239,9 @@ html {
                     .side-bar {
                         min-width: 200px
                     }
+                    .sidebar-top {
+                        padding: 0.5rem;
+                    }
                     /* siderbar top */
                     /* logo */
                     .logo {
@@ -239,7 +249,6 @@ html {
                         width: 90%;
                         display: flex;
                         align-items: center;
-                    
                     }
                     .logo a {
                         pointer-events: none;
@@ -249,47 +258,84 @@ html {
                     .logo h1{
                         display: inline-block;
                         vertical-align: middle;
-                        font-size: 2rem;
+                        font-size: 1.5rem;
                         padding-bottom:10px;
                     }
 
                     /* link */
                     .link {
                         width: 90%;
-                        display: flex;
-                        align-items: center;
+                        padding: 0rem 0.5rem;
                     }
                     .link a{
                         pointer-events: none;
                         cursor: text;
                         text-decoration: none;
+                        display: flex;
+                        align-items: center;
                     }
                     .link ul li a span {
                         display: inline-block;
                         font-size: 1rem;
                         vertical-align: middle;
+                        padding: 0.3rem;
                     }
 
                     /* playlist */
                     .playlist-scroll {
                         overflow-y: hidden;
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: column;                       
+                    }
+                    .playlist-scroll .title {
+                        display: flex;
+                        align-items: center;
+                        padding: 0.7rem 0rem;
+                    }
+                    .playlist-scroll h3{
+                        color: var(--fourth-color);
                     }
                     .playlist-scroll ul {
                         overflow-y: scroll;
-                    
+                        color: var(--fifth-color);
                     }
+                    .playlist-scroll ul li{
+                        padding: 0.5rem 0rem;
+                    }
+                    .playlist-scroll i{
+                        width: 40px;
+                        height: 40px;
+                        font-size: 1.5rem;
+                        background-color: var(--fifth-color);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .playlist-scroll span {
+                        color: var(--fifth-color);
+                        padding-left: 0.5rem;
+                    }
+
                     /* siderbar bottom */
                     .sidebar-bottom {
                         width: 200px;
-                        
+                        align-items: start;
+                        padding: 1rem;
+                    }
+                    .sidebar-bottom .download  {
+                        text-align: start;
+                        width: 90%;
                     }
                     .sidebar-bottom .download span {
                         display: inline-block;
                     }
+                    .sidebar-bottom .account {
+                        border-top: solid var(--fifth-color) 1px;
+                        width: 90%;
+                    }
                     .sidebar-bottom .account h3 {
                         display: inline-block;
+                        font-size: 1rem;
                     }
                     /* NAV-BAR */
                     .nav-bar ul li {
