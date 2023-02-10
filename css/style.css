@@ -63,7 +63,7 @@ html {
             justify-content: space-between;
         }
         .scroll {
-            overflow: scroll;
+            overflow-y: auto;
         }
         img {
             max-width: 100%;
@@ -375,6 +375,15 @@ html {
                 /************************************************
                     RESPONSIVE
                 ************************************************/
+                @media screen and (max-height:440px){
+                    .upgrade {
+                        display: none;
+                    }
+                    .center {
+                        padding-top: 0px;
+                    }
+
+                }
                 @media screen and (max-width:440px){
                     .footer-right{
                         display: none;
@@ -460,7 +469,7 @@ html {
                         color: var(--fourth-color);
                     }
                     .playlist-scroll ul {
-                        overflow-y: scroll;
+                        overflow-y: auto;
                         color: var(--fifth-color);
                     }
                     .playlist-scroll ul li{
