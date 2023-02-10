@@ -1,0 +1,51 @@
+
+
+/* PUNTO BONUS 2 */
+@media screen and (max-height:440px){
+    .upgrade {
+        display: none;
+    }
+    .center {
+        padding-top: 0px;
+    }
+
+}
+
+/* PUNTO BONUS 4 */
+@media screen and (max-width:440px){
+    .footer-right{
+        display: none;
+    }
+    .footer-left {
+        display: none;
+    }
+    .footer-bar {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:440px){
+    .footer-right{
+        display: flex;
+    }
+    .footer-left {
+        display: flex;
+    }         
+}
+
+/* BONUS PUNTO 3 */
+
+.animation {
+    position: relative;
+    
+    animation:spin 4s linear infinite;
+}
+
+
+@keyframes spin { 
+
+    100% { 
+        transform:rotate(360deg);
+    } 
+
+}

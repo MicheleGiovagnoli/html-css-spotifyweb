@@ -187,6 +187,7 @@ html {
                     opacity: 0.5;
                     justify-content: end;
                     align-items: center;
+                    z-index: 999;
                 }
                     .upgrade-button {
                         width: 200px;
@@ -375,35 +376,6 @@ html {
                 /************************************************
                     RESPONSIVE
                 ************************************************/
-                @media screen and (max-height:440px){
-                    .upgrade {
-                        display: none;
-                    }
-                    .center {
-                        padding-top: 0px;
-                    }
-
-                }
-                @media screen and (max-width:440px){
-                    .footer-right{
-                        display: none;
-                    }
-                    .footer-left {
-                        display: none;
-                    }
-                    .footer-bar {
-                        display: flex;
-                        justify-content: center;
-                    }
-                }
-                @media screen and (min-width:440px){
-                    .footer-right{
-                        display: flex;
-                    }
-                    .footer-left {
-                        display: flex;
-                    }         
-                }
                 @media screen and (min-width:576px){
                     /* UPGRADE */
                     .upgrade {
@@ -577,6 +549,29 @@ html {
                     }
                     .playlist .container .hover i:hover{
                         opacity: 1;
+                    }
+
+                    .center .nav-bar ul li:hover {
+                        color: var(--fourth-color);
+                    }
+
+                    .center .upgrade .upgrade-button:hover {
+                        background-color: rgba(32, 90, 32, 0.397);
+                    }
+
+                    .link ul li a:hover {
+                        color: var(--fourth-color);
+
+                    }
+
+                    .playlist-scroll li:hover {
+                        color: var(--fourth-color);
+                    }
+                    .playlist-scroll .title i:hover {
+                        color: var(--fourth-color);
+                    }
+                    .playlist-scroll .title span:hover {
+                        color: var(--fourth-color);
                     }
 
                     .bar .bar-line:hover .bar-line-move  {
